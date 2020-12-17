@@ -1,0 +1,13 @@
+name = "SavitskyGolayFilters"
+uuid = "f52a7a4e-f3c4-4810-b429-372b32c00cf9"
+authors = ["Hugo Levy-Falk"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
