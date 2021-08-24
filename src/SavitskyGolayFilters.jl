@@ -60,7 +60,7 @@ savitskygolay(x, filter::AbstractArray) = begin
     len_filter = length(filter)
     border_repeat = floor(Int, len_filter/2)
     conv(
-        filter,
+         reverse(filter),
         [repeat([x[1]],border_repeat);x;repeat([x[end]],border_repeat)],
        )[len_filter:end-len_filter+1]
 end
